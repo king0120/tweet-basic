@@ -10,8 +10,20 @@
 
 <body>
   <div class="container">
+
+    <!-- Simple form made to post data to the server -->
     <div class="row">
-      <h1 class= "col-md-6 col-md-offset-3"><%- header %></h1>          
+      <div class="col-md-12 center">
+        <form action="/" method="post">
+          <label for="search">Search:</label>
+          <input name="search" type="text" id="search">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <h1 class= "col-md-6 col-md-offset-3"><%- header %></h1>
     </div>
   </div>
   <div class="container" id="tweet-container">
